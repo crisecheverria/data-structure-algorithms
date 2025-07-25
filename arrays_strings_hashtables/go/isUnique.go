@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func IsUnique(input string) bool {
 	if len(input) > 256 {
 		return false
@@ -17,4 +19,12 @@ func IsUnique(input string) bool {
 	}
 
 	return true
+}
+
+func main() {
+	fmt.Println("=== IsUnique Tests ===")
+	fmt.Printf("IsUnique(\"hello\"): %t\n", IsUnique("hello"))         // false
+	fmt.Printf("IsUnique(\"world\"): %t\n", IsUnique("world"))         // true
+	fmt.Printf("IsUnique(\"abcdef\"): %t\n", IsUnique("abcdef"))       // true
+	fmt.Printf("IsUnique(\"programming\"): %t\n", IsUnique("programming")) // false
 }
