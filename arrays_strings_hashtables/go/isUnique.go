@@ -1,8 +1,6 @@
 package main
 
-import "fmt"
-
-func isUnique(input string) bool {
+func IsUnique(input string) bool {
 	if len(input) > 256 {
 		return false
 	}
@@ -19,12 +17,4 @@ func isUnique(input string) bool {
 	}
 
 	return true
-}
-
-func main() {
-	fmt.Println("isUnique test:")
-	fmt.Println(isUnique("hello")) // Output: false
-	
-	fmt.Println("twoSum test:")  
-	fmt.Println(twoSum([]int{2, 7, 11, 15}, 9)) // Output: [0, 1]
 }

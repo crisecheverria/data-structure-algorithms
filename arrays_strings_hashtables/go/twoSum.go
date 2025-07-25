@@ -1,8 +1,6 @@
 package main
 
-import "fmt"
-
-func twoSum(nums []int, target int) []int {
+func TwoSum(nums []int, target int) []int {
 	if len(nums) < 2 {
 		return []int{}
 	}
@@ -18,4 +16,3 @@ func twoSum(nums []int, target int) []int {
 
 	return []int{} // Return an empty slice if no solution is found
 }
-
